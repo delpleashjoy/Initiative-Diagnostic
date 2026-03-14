@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Initiative Imbalance Diagnostic™ | ProfDaddyJOY</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ANALYZING OVERLAY -->
+<div id="analyzingOverlay">
+  <div class="analyzing-brand">Relational Structural Recalibration</div>
+  <div class="analyzing-subbrand">Signal Processing</div>
+  <div class="analyzing-ring">
+    <svg viewBox="0 0 140 140">
+      <circle class="arc-track" cx="70" cy="70" r="60"/>
+      <circle class="arc-fill"  cx="70" cy="70" r="60"/>
+    </svg>
+    <div class="analyzing-pct-center">
+      <div class="analyzing-pct" id="analyzingPct">0%</div>
+      <div class="analyzing-pct-label">Processing</div>
+    </div>
+  </div>
+  <div class="analyzing-steps">
+    <div class="analyzing-step" id="step1"><div class="step-dot"></div><span class="step-label">Scanning reminder frequency</span><span class="step-check">✓</span></div>
+    <div class="analyzing-step" id="step2"><div class="step-dot"></div><span class="step-label">Mapping overfunctioning index</span><span class="step-check">✓</span></div>
+    <div class="analyzing-step" id="step3"><div class="step-dot"></div><span class="step-label">Reading withdrawal signals</span><span class="step-check">✓</span></div>
+    <div class="analyzing-step" id="step4"><div class="step-dot"></div><span class="step-label">Calculating ownership drift</span><span class="step-check">✓</span></div>
+    <div class="analyzing-step" id="step5"><div class="step-dot"></div><span class="step-label">Measuring resentment trajectory</span><span class="step-check">✓</span></div>
+    <div class="analyzing-step" id="step6"><div class="step-dot"></div><span class="step-label">Generating structural read</span><span class="step-check">✓</span></div>
+  </div>
+</div>
+
+<canvas id="signal"></canvas>
+
+<!-- ═══════════════════ INTRO ═══════════════════ -->
+<div class="screen active" id="introScreen">
+  <div class="intro-inner">
+    <div class="brand-tag">Relational Structural Recalibration</div>
+    <div class="intro-cred">Deano · Relational Systems Advisor · NLP Master Practitioner</div>
+    <h1>Initiative Imbalance<br><span>Diagnostic™</span></h1>
+    <div class="gold-line"></div>
+    <p class="intro-hook">If you've explained the same thing more than twice — and nothing changed — this isn't a communication problem.</p>
+    <p class="intro-sub">It's a structural imbalance. This diagnostic measures exactly where ownership has drifted, how deep the pattern runs, and what it's costing you.</p>
+    <div class="intro-meta">
+      <div class="meta-item"><strong>18</strong>Questions</div>
+      <div class="meta-item"><strong>5</strong>Domains</div>
+      <div class="meta-item"><strong>4–5</strong>Minutes</div>
+    </div>
+    <p class="intro-method">Built from intake data across 200+ high-functioning women. Not a personality quiz — a structural diagnostic.</p>
+    <!-- CHANGE 1: Button copy — removed "Imbalance", now "Run My Structural Diagnostic" -->
+    <button class="start-btn" onclick="startQuiz()">▶ &nbsp; Run My Structural Diagnostic</button>
+    <!-- CHANGE 4: Removed "No data stored" — eliminates contradiction with email gate -->
+    <p class="intro-note">Private · One question at a time</p>
+  </div>
+</div>
+
+<!-- ═══════════════════ QUIZ ═══════════════════ -->
+<div class="screen" id="quizScreen">
+  <div class="progress-bar-wrap">
+    <div class="progress-inner">
+      <div class="progress-left">
+        <span class="progress-qnum"   id="progressQnum">1 / 18</span>
+        <span class="progress-domain" id="progressDomain">Mental Load</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-pct" id="progressPct">0%</span>
+    </div>
+  </div>
+  <div class="question-stage">
+    <div class="question-card" id="questionCard"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════ EMAIL GATE ═══════════════════ -->
+<div class="screen" id="gateScreen">
+  <div class="gate-inner">
+    <div class="brand-tag">Relational Structural Recalibration</div>
+    <div class="intro-cred">Deano · Relational Systems Advisor · NLP Master Practitioner</div>
+    <div class="gate-icon">◈</div>
+    <div class="gold-line"></div>
+    <h2 class="gate-title">18 questions. 5 domains.<br>Your structural read is complete.</h2>
+    <!-- Partial result preview — score + tier visible before gate -->
+    <div class="gate-score-preview" id="gatePreview">
+      <div class="gate-score-num" id="gateScoreNum">—<span>/100</span></div>
+      <div class="gate-score-details">
+        <div class="gate-score-tier" id="gateScoreTier">Calculating...</div>
+        <div class="gate-score-reveal">Your full 5-domain breakdown and structural first moves are one step away.</div>
+      </div>
+    </div>
+    <p class="gate-sub">Enter your name and email to reveal your score. You'll also receive the free 5-day Recalibration Reset.</p>
+    <div class="gate-what">
+      <div class="gate-what-label">You'll receive</div>
+      <div class="gate-what-items">
+        <div class="gate-what-item"><span class="gate-check">✓</span>Your full diagnostic score across 5 domains</div>
+        <div class="gate-what-item"><span class="gate-check">✓</span>Your 3 highest-priority patterns with personalised first moves</div>
+        <div class="gate-what-item"><span class="gate-check">✓</span>Free 5-day Initiative Recalibration Reset — one structural shift per day</div>
+        <div class="gate-what-item"><span class="gate-check">✓</span>Private · No spam · Unsubscribe any time</div>
+      </div>
+    </div>
+    <div class="gate-form">
+      <input type="text"  id="gateName"  class="gate-input" placeholder="First name" autocomplete="given-name"/>
+      <input type="email" id="gateEmail" class="gate-input" placeholder="Your email address" autocomplete="email"/>
+      <div class="gate-error" id="gateError"></div>
+      <button class="gate-btn" onclick="submitGate()">▶ &nbsp; Reveal My Score</button>
+      <!-- CHANGE 3: Micro-reassurance directly under submit button — highest-anxiety moment -->
+      <p class="gate-reassure">Your score is already calculated. This just tells us where to send it.</p>
+      <p class="gate-privacy">Private · No data sold · Unsubscribe any time</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ RESULTS ═══════════════════ -->
+<div class="screen" id="resultsScreen">
+  <div class="results-container">
+    <div class="results-header">
+      <div class="brand-tag">Diagnostic Complete — Initiative Imbalance Score™</div>
+      <div class="results-greeting" id="resultsGreeting"></div>
+      <div class="score-ring">
+        <svg viewBox="0 0 160 160">
+          <circle class="track" cx="80" cy="80" r="70"/>
+          <circle class="fill" id="scoreCircle" cx="80" cy="80" r="70"/>
+        </svg>
+        <div class="score-center">
+          <div class="score-number" id="scoreDisplay">0</div>
+          <div class="score-max">/ 100</div>
+        </div>
+      </div>
+      <div class="score-method">Calculated across 5 domains: reminder load, overfunctioning, emotional signal stability, ownership clarity, and emotional sustainability.</div>
+      <div class="result-level"   id="resultLevel"></div>
+      <div class="result-title"   id="resultTitle"></div>
+      <p   class="result-tagline" id="resultTagline"></p>
+      <p   class="result-trajectory" id="resultTrajectory"></p>
+      <div class="result-honesty">These results reflect the answers you gave. If any felt uncomfortable to answer honestly, your actual score is likely higher.</div>
+      <div class="result-benchmark" id="resultBenchmark"></div>
+      <div class="gold-line" style="margin-top:24px;"></div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:16px;">The 3 Patterns Showing Up Most Clearly For You</div>
+    <div class="drift-block" id="driftBlock"></div>
+
+    <!-- CHANGE 9: Section separator -->
+    <div class="section-sep"></div>
+
+    <div class="early-cta">
+      <span class="early-cta-text">Ready to act on this? The next step is already waiting for you.</span>
+      <a href="#ctaAnchor" class="early-cta-btn">See My Next Step &nbsp;↓</a>
+    </div>
+
+    <!-- CHANGE 9: Section separator -->
+    <div class="section-sep"></div>
+
+    <div class="insight-block">
+      <!-- BONUS: Heading changed from "What Your Score Actually Means" to "The Structural Read" -->
+      <h3>The Structural Read</h3>
+      <p id="insightText"></p>
+      <div class="objection-reframe">This Reset is not contingent on his willingness. It starts with the one variable you actually control — and structural change in one part of the system always creates pressure on the other.</div>
+      <div class="key-findings" id="keyFindings"></div>
+    </div>
+
+    <!-- CHANGE 9: Section separator -->
+    <div class="section-sep"></div>
+
+    <div class="section-label">Domain Breakdown</div>
+    <div class="domain-grid" id="domainGrid"></div>
+
+    <!-- CHANGE 9: Section separator before CTA -->
+    <div class="section-sep"></div>
+
+    <!-- CHANGE 6: CTA block now has border + top gradient line = visual destination -->
+    <!-- CHANGE 5: Share block moved BELOW this CTA block -->
+    <div class="cta-block" id="ctaAnchor">
+      <div class="cta-after-state" id="ctaAfterState"></div>
+      <div class="cta-testimonial">
+        <div class="cta-testimonial-quote" id="ctaTestimonial"></div>
+      </div>
+      <div class="cta-course-badge">
+        <span class="excl-dot">◈</span>
+        Free · 5 Days · One structural shift per day · Delivered to your inbox
+      </div>
+      <h3 id="ctaTitle"></h3>
+      <p  id="ctaBody"></p>
+      <div class="course-what">
+        <div class="course-what-item"><span>Day 1</span>Understanding your exact imbalance pattern — and why it keeps returning</div>
+        <div class="course-what-item"><span>Day 2</span>The Competence Trap — how to stop covering for his absence without creating chaos</div>
+        <div class="course-what-item"><span>Day 3</span>Strategic stepping back — the one move that changes the system without a single conversation</div>
+        <div class="course-what-item"><span>Day 4</span>Ownership transfer — how to hand responsibility over so it actually stays</div>
+        <div class="course-what-item"><span>Day 5</span>Installing the new default — structural recalibration that holds beyond the first week</div>
+      </div>
+      <!-- CHANGE 11: Forward state paragraph — sensory after-picture before button -->
+      <p class="cta-forward-state" id="ctaForwardState"></p>
+      <!-- CHANGE 7: Button copy shortened to clean 4 words -->
+      <button class="cta-btn" id="ctaBtn" onclick="claimCourse()">Start My Free Reset →</button>
+      <div class="cta-sub">Your email is already on file — this is your next structural move.</div>
+    </div>
+
+    <!-- CHANGE 5: Share block now AFTER CTA — no longer interrupts conversion flow -->
+    <div class="share-block">
+      <div class="share-label">Share Your Result</div>
+      <div class="share-copy-text" id="shareCopyText"></div>
+      <button class="share-btn" onclick="copyShareText()">
+        <span id="shareBtnLabel">⧉ &nbsp; Copy My Result</span>
+      </button>
+      <p class="share-note">Paste into a message, post, or private group. No link tracking — just your words.</p>
+    </div>
+
+    <div style="text-align:center;margin-top:32px;">
+      <button class="retake-btn" onclick="retake()">↺ &nbsp; Retake Diagnostic</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

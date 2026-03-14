@@ -1,0 +1,17 @@
+{
+  "name": "initiative-diagnostic",
+  "version": "1.0.0",
+  "description": "Frontend website for Initiative Imbalance Diagnostic",
+  "main": "serve.mjs",
+  "scripts": {
+    "start": "node serve.mjs",
+    "dev": "node serve.mjs",
+    "screenshot": "node screenshot.mjs http://localhost:3000"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

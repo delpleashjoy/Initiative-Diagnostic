@@ -1,0 +1,5 @@
+.env
+node_modules/
+temporary screenshots/
+credentials.json
+token.json
