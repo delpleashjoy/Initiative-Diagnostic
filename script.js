@@ -419,7 +419,7 @@ function showResults(){
      firstMove:`This week, let one recurring reminder go unanswered. Don't fill the gap. Don't explain why. Just watch what happens. That gap is where his initiative either grows — or confirms what you already know.`},
     {qid:'q6',  label:'When you stop, everything stops',
      read:t=>`You said: "${t}". The gap only stays invisible because you fill it. When you stop, the system stalls. This is not his laziness. It is a feedback loop that has never been challenged.`,
-     firstMove:`Choose one task you have been absorbing silently. Transfer it clearly: "This is yours now. I won't be following up." Then don't follow up. The discomfort you feel is the system resisting change.`},
+     firstMove:`Choose one task you have been absorbing silently. Hand it over with a clear, calm statement — something like: "I'd love for you to take this one. I'm stepping back from it completely." Then step back. No reminders, no check-ins. The discomfort you feel after letting go is the system adjusting. That's not a sign to re-engage — it's a sign it's working.`},
     {qid:'q9',  label:'Your competence is covering for his absence',
      read:t=>`You indicated: "${t}". Your capability has become the cover for his absence. The more reliably you absorb, the less pressure there is for him to show up. This is not a compliment. It is the trap.`,
      firstMove:`This week, do something imperfectly on purpose — in a domain he could own. Let the standard slip slightly. Not to punish him. To see if he notices. His response is your data.`},
@@ -443,7 +443,7 @@ function showResults(){
      firstMove:`Stop managing one thing this week — even briefly. Even 20 minutes of not managing creates a different frequency in the room. Notice what happens when you stop running the system.`},
     {qid:'q16', label:'Nobody\'s clear on who owns what',
      read:t=>`You described ownership clarity as: "${t}". When no one clearly owns the outcome, reminders increase and initiative decreases. Ambiguity always resolves toward the person with higher standards — which is you.`,
-     firstMove:`Name one domain — just one — and assign it clearly: "This is yours. Fully. I won't touch it." No conditions. No fallback plan. Clear ownership is the only environment where initiative has room to grow.`},
+     firstMove:`Name one domain — just one — and hand it over genuinely: "I'd love for this to be fully yours. I'm stepping out of it completely." No conditions, no fallback. When someone clearly owns an outcome — with no one to catch the gap — that's the only environment where initiative actually grows.`},
   ];
 
   const top3=driftDefs.map(d=>({...d,score:v(d.qid),ans:t(d.qid)})).sort((a,b)=>b.score-a.score).slice(0,3);
