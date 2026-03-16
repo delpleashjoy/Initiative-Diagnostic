@@ -479,7 +479,7 @@ function showResults(){
       title:'Break The Cycle Before It Becomes The Default',
       body:'Your score shows active imbalance across multiple domains. The course gives you a daily systemic shift — no long sessions, no difficult conversations required to begin.',
       forward:'When women at your score level reach the other side, they consistently describe the same thing: they stopped managing, and he started showing up. Not perfectly. But voluntarily. That shift — from supervised to chosen — is what this course is built to install.',
-      btn:'Start My Free Course →'
+      btn:'Start My Free Reset →'
     },
     high:{
       after:'You\'ve been carrying this long enough that the weight feels normal. The 14-day Reset starts by showing you exactly what you\'ve been absorbing — and gives you a daily step to hand it back, without collapse.',
@@ -487,7 +487,7 @@ function showResults(){
       title:'5 Days. One Systemic Shift Per Day.',
       body:'Women at your score level typically see the first measurable change in reminder frequency within the first week — not because of a conversation, but because of a systemic adjustment.',
       forward:'At your level, recalibration doesn\'t just change the dynamic — it changes how you feel in your own body at home. The low-grade vigilance lifts. You stop bracing. You start being present instead of being on duty. That\'s not a small thing. That\'s the relationship you\'ve been keeping yourself from.',
-      btn:'Start My Free Course →'
+      btn:'Start My Free Reset →'
     },
     critical:{
       after:'You\'ve been absorbing this alone for longer than you should have had to. The 14-day Reset starts with the heaviest patterns first — and gives you something real to work with from Day 1.',
@@ -495,7 +495,7 @@ function showResults(){
       title:'You\'ve Waited Long Enough. Start Here.',
       body:'Your score signals that the system needs correction — urgently. The 14-day Reset is designed for exactly this level. One day, one shift, no overwhelm.',
       forward:'You have been carrying this alone long enough. What changes first isn\'t dramatic — it\'s quiet. One morning you realise you didn\'t wake up already thinking about what he hasn\'t done. That\'s what a recalibrated system feels like. That\'s what\'s waiting on the other side of this course.',
-      btn:'Start My Free Course →'
+      btn:'Start My Free Reset →'
     }
   };
 
