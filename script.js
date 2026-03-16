@@ -484,7 +484,7 @@ function showResults(){
     high:{
       after:'You\'ve been carrying this long enough that the weight feels normal. The 14-day Reset starts by showing you exactly what you\'ve been absorbing — and gives you a daily step to hand it back, without collapse.',
       testimonial:'By Day 8 something shifted. I didn\'t say a word — he just started noticing things before I had to. — Executive, 41',
-      title:'14 Days. One Systemic Shift Per Day.',
+      title:'5 Days. One Systemic Shift Per Day.',
       body:'Women at your score level typically see the first measurable change in reminder frequency within the first week — not because of a conversation, but because of a systemic adjustment.',
       forward:'At your level, recalibration doesn\'t just change the dynamic — it changes how you feel in your own body at home. The low-grade vigilance lifts. You stop bracing. You start being present instead of being on duty. That\'s not a small thing. That\'s the relationship you\'ve been keeping yourself from.',
       btn:'Start My Free Course →'
