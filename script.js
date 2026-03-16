@@ -509,10 +509,10 @@ function showResults(){
   document.getElementById('ctaBtn').textContent=cta.btn;
 
   const shareLines={
-    stable:   `I just took the Initiative Imbalance Diagnostic™ — scored ${totalScore}/100. Caught it early, before it became resentment. If you're a high-functioning woman who senses something is slightly off in how responsibility is distributed — this diagnostic names it in 5 minutes: https://profDaddyJOY.com/diagnostic`,
-    moderate: `My Initiative Imbalance Score is ${totalScore} — Moderate Drift. Apparently the Competence Trap is real. I've been compensating so smoothly the imbalance barely shows. If that sounds familiar, there's a diagnostic built for high-functioning women: https://profDaddyJOY.com/diagnostic`,
-    high:     `My Initiative Imbalance Score is ${totalScore} — Advanced Drift. Turns out I've been functioning as the relationship's executive, logistics manager, and emotional architect simultaneously. If you're tired of managing instead of partnering, this diagnostic is worth 8 minutes: https://profDaddyJOY.com/diagnostic`,
-    critical: `My Initiative Imbalance Score is ${totalScore} — Chronic Initiative Collapse. I've been absorbing this alone for longer than I realised. If you're a high-performing woman running a relationship with no finish line, there's a free diagnostic that finally named the pattern: https://profDaddyJOY.com/diagnostic`
+    stable:   `I just took the Initiative Imbalance Diagnostic™ — scored ${totalScore}/100. Caught it early, before it became resentment. If you're a high-functioning woman who senses something is slightly off in how responsibility is distributed — this diagnostic names it in 5 minutes: https://diagnostic.humanocity.me`,
+    moderate: `My Initiative Imbalance Score is ${totalScore} — Moderate Drift. Apparently the Competence Trap is real. I've been compensating so smoothly the imbalance barely shows. If that sounds familiar, there's a diagnostic built for high-functioning women: https://diagnostic.humanocity.me`,
+    high:     `My Initiative Imbalance Score is ${totalScore} — Advanced Drift. Turns out I've been functioning as the relationship's executive, logistics manager, and emotional architect simultaneously. If you're tired of managing instead of partnering, this diagnostic is worth 8 minutes: https://diagnostic.humanocity.me`,
+    critical: `My Initiative Imbalance Score is ${totalScore} — Chronic Initiative Collapse. I've been absorbing this alone for longer than I realised. If you're a high-performing woman running a relationship with no finish line, there's a free diagnostic that finally named the pattern: https://diagnostic.humanocity.me`
   };
   const shareText = shareLines[ctaKey];
   document.getElementById('shareCopyText').textContent=shareText;
